@@ -1,5 +1,6 @@
 package seleniumgludecode;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,31 +9,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test_buscador {
+public class Test_buscador extends TestBase {
 
-    private ChromeDriver driver;
 
 
     @Given("^El usuario se debe encontrar en la pagina Home principal de imalittletester$")
     public void el_usuario_se_debe_encontrar_en_la_pagina_Home_principal_de_imalittletester() throws Throwable {
 
-        System.setProperty("webdriver.chrome.driver","./src/test/resources/Chromedriver/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://imalittletester.com/");
-        driver.manage().window().maximize();
-
-    }
-
-    @When("^Situarse en la caja de busqueda Search$")
-    public void situarse_en_la_caja_de_busqueda_Search() throws Throwable {
-
-        WebElement titleComicsLocator = driver.findElement(By.className("search-field"));
-
+        Assert.assertTrue(homePage.homePageIsDisplayed());
 
     }
 
     @When("^Ingresar la palabra Selenium$")
-    public void ingresar_la_palabra_Selenium() throws Throwable {
+    public void ingresar_la_palabra_Selenium()  {
 
         WebElement titleComicsLocator = driver.findElement(By.className("search-field"));
         titleComicsLocator.sendKeys("Selenium");
@@ -40,8 +29,8 @@ public class Test_buscador {
 
     }
 
-    @When("^Lanzar las busqueda presionando la tecla Enter$")
-    public void lanzar_las_busqueda_presionando_la_tecla_Enter() throws Throwable {
+    @And("^Lanzar las busqueda presionando la tecla Enter$")
+    public void lanzar_las_busqueda_presionando_la_tecla_Enter() {
 
         WebElement titleComicsLocator2 = driver.findElement(By.className("search-field"));
         titleComicsLocator2.submit();
@@ -49,7 +38,7 @@ public class Test_buscador {
     }
 
     @Then("^Se deben visualizar los resultados de la busqueda$")
-    public void se_deben_visualizar_los_resultados_de_la_busqueda() throws Throwable {
+    public void se_deben_visualizar_los_resultados_de_la_busqueda()  {
 
 
         String url = driver.getCurrentUrl();

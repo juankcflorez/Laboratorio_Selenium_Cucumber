@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-       features = "src/test/java/feature",
+       //features = "src/test/java/feature",
         //features = "src/test/java/feature/test.feature",
-        // features = "src/test/java/feature/test_buscador.feature",
+         features = "src/test/java/feature/test_buscador.feature",
 
 
         glue = {"seleniumgludecode"},

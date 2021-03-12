@@ -1,7 +1,10 @@
 package seleniumgludecode;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import runner.browser_manager.DriverManager;
 import runner.browser_manager.DriverManagerFactory;
@@ -32,9 +35,15 @@ private DriverManager driverManager;
     }
 
 @After
-    public  void tearDown(){
-    System.out.println("El escenario nro"+ numberofcase +"Se ejecutó correctamente");
+    public  void tearDown(Scenario scenario){
 
+   if (scenario.isFailed()){
+       byte[] screenshot = ((TakesScreenshot)driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+       scenario.embed(screenshot,"image/png");
+   }
+
+
+    System.out.println("El escenario nro"+ numberofcase +"Se ejecutó correctamente");
     driverManager.quitDriver();
 
     }
