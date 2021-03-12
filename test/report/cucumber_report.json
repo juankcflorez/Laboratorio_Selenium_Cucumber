@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25082886700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Ingresar al modulo Comics desde la pantalla Home",
+        "description": "",
+        "id": "ingresar-al-modulo-de-comics;ingresar-al-modulo-comics-desde-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 714189800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102942900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "El usuario se debe encontrar en el Home principal de imalittletester",
+            "match": {
+              "location": "Test.el_usuario_se_debe_encontrar_en_el_Home_principal_de_imalittletester()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2513619100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Realice clic sobre el botón \"The little tester comics\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The little tester comics",
+                  "offset": 29
+                }
+              ],
+              "location": "Test.realice_clic_sobre_el_botón(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105127000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Se debe redirigir a la pantalla Comics",
+            "match": {
+              "location": "Test.se_debe_redirigir_a_la_pantalla_Comics()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5189967700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Ingresar al modulo Comics desde la pantalla Home",
+        "description": "",
+        "id": "ingresar-al-modulo-de-comics;ingresar-al-modulo-comics-desde-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 712920200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12320300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "El usuario se debe encontrar en el Home principal de imalittletester",
+            "match": {
+              "location": "Test.el_usuario_se_debe_encontrar_en_el_Home_principal_de_imalittletester()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1534845200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Realice clic sobre el botón \"The little tester comics\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The little tester comics",
+                  "offset": 29
+                }
+              ],
+              "location": "Test.realice_clic_sobre_el_botón(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111893500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Se debe redirigir a la pantalla Comics",
+            "match": {
+              "location": "Test.se_debe_redirigir_a_la_pantalla_Comics()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ingresar al modulo de Comics",
+    "description": "Como usuario quiero ingresar al modulo de comics para leer chiste y pasar un buen rato",
+    "id": "ingresar-al-modulo-de-comics",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18068464700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Realizar una consulta a través del buscador de la pantalla Home",
+        "description": "",
+        "id": "realizar-una-consulta-a-través-del-buscador;realizar-una-consulta-a-través-del-buscador-de-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 1217310300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13758107000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "El usuario se debe encontrar en la pagina Home principal de imalittletester",
+            "match": {
+              "location": "Test_buscador.el_usuario_se_debe_encontrar_en_la_pagina_Home_principal_de_imalittletester()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23594300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Situarse en la caja de busqueda Search",
+            "match": {
+              "location": "Test_buscador.situarse_en_la_caja_de_busqueda_Search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86037500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ingresar la palabra Selenium",
+            "match": {
+              "location": "Test_buscador.ingresar_la_palabra_Selenium()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2250682800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Lanzar las busqueda presionando la tecla Enter",
+            "match": {
+              "location": "Test_buscador.lanzar_las_busqueda_presionando_la_tecla_Enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17316200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Se deben visualizar los resultados de la busqueda",
+            "match": {
+              "location": "Test_buscador.se_deben_visualizar_los_resultados_de_la_busqueda()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar una consulta a través del buscador",
+    "description": "Como usuario quiero realizar una consulta a través del buscador para obtener un mayor detalle de información",
+    "id": "realizar-una-consulta-a-través-del-buscador",
+    "keyword": "Feature",
+    "uri": "test_buscador.feature"
+  }
+]
