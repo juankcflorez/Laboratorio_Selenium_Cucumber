@@ -3,10 +3,76 @@
     "line": 1,
     "elements": [
       {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#Scenario: Ingresar al modulo Comics desde la pantalla Home"
+          },
+          {
+            "line": 6,
+            "value": "# Given El usuario se debe encontrar en el Home principal de imalittletester"
+          },
+          {
+            "line": 7,
+            "value": "# When Realice clic sobre el botón \"The little tester comics\""
+          },
+          {
+            "line": 8,
+            "value": "# Then Se debe redirigir a la pantalla Comics"
+          },
+          {
+            "line": 10,
+            "value": "#Scenario: Ingresar al modulo Comics desde la pantalla Home"
+          },
+          {
+            "line": 12,
+            "value": "# Given El usuario se debe encontrar en el Home principal de imalittletester"
+          },
+          {
+            "line": 13,
+            "value": "# When Realice clic sobre el botón \"The little tester comics\""
+          },
+          {
+            "line": 14,
+            "value": "# Then Se debe redirigir a la pantalla Comics"
+          },
+          {
+            "line": 16,
+            "value": "#Scenario Outline: Bebiendo"
+          },
+          {
+            "line": 18,
+            "value": "#Given Hay \u003cinicio\u003e Cervezas"
+          },
+          {
+            "line": 19,
+            "value": "#When Tomo \u003ccantidad\u003e Cervezas"
+          },
+          {
+            "line": 20,
+            "value": "#Then Deberian quedar \u003cresto\u003e cervezas"
+          },
+          {
+            "line": 22,
+            "value": "#Examples:"
+          },
+          {
+            "line": 23,
+            "value": "#| inicio | cantidad | resto |"
+          },
+          {
+            "line": 24,
+            "value": "#|   10   |     5    |   5   |"
+          },
+          {
+            "line": 25,
+            "value": "#|   10   |     10   |   1   |"
+          }
+        ],
         "before": [
           {
             "result": {
-              "duration": 9254388200,
+              "duration": 9385665400,
               "status": "passed"
             },
             "match": {
@@ -14,14 +80,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Realizar una consulta a través del buscador de la pantalla Home",
+        "line": 28,
+        "name": "Data table",
         "description": "",
-        "id": "realizar-una-consulta-a-través-del-buscador;realizar-una-consulta-a-través-del-buscador-de-la-pantalla-home",
+        "id": "ingresar-al-modulo-de-comics;data-table",
         "after": [
           {
             "result": {
-              "duration": 976567600,
+              "duration": 912100100,
               "status": "passed"
             },
             "match": {
@@ -34,59 +100,49 @@
         "steps": [
           {
             "result": {
-              "duration": 126222300,
+              "duration": 100283400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "El usuario se debe encontrar en la pagina Home principal de imalittletester",
+            "line": 30,
+            "name": "Los siguientes usuarios existentes:",
             "match": {
-              "location": "Test_buscador.el_usuario_se_debe_encontrar_en_la_pagina_Home_principal_de_imalittletester()"
+              "location": "Test.los_siguientes_usuarios_existentes(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "email",
+                  "twitter"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "juan",
+                  "juan@gmail.com",
+                  "@juan"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "camilo",
+                  "camilo@gmail.com",
+                  "@camilo"
+                ],
+                "line": 34
+              }
+            ],
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 95651600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Ingresar la palabra Selenium",
-            "match": {
-              "location": "Test_buscador.ingresar_la_palabra_Selenium()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1350286300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Lanzar las busqueda presionando la tecla Enter",
-            "match": {
-              "location": "Test_buscador.lanzar_las_busqueda_presionando_la_tecla_Enter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33112800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Se deben visualizar los resultados de la busqueda",
-            "match": {
-              "location": "Test_buscador.se_deben_visualizar_los_resultados_de_la_busqueda()"
-            },
-            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Realizar una consulta a través del buscador",
-    "description": "Como usuario quiero realizar una consulta a través del buscador para obtener un mayor detalle de información",
-    "id": "realizar-una-consulta-a-través-del-buscador",
+    "name": "Ingresar al modulo de Comics",
+    "description": "Como usuario quiero ingresar al modulo de comics para leer chiste y pasar un buen rato",
+    "id": "ingresar-al-modulo-de-comics",
     "keyword": "Feature",
-    "uri": "src/test/java/feature/test_buscador.feature"
+    "uri": "src/test/java/feature/test.feature"
   }
 ]
